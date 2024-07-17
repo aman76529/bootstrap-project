@@ -1,0 +1,275 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: "Playwrite DE Grund", cursive;}
+html, body{
+	overflow-x: hidden;
+}
+.nav-bar{
+	width: 100%;
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	justify-content: space-between;
+	padding: 20px;
+	color: white;
+}
+ul{
+	list-style: none;
+}
+.nav-links{
+	display: flex;
+	align-items: center;
+}
+.nav-links li{
+	margin: 0px 30px;
+}
+.nav-links li a{
+	color: white;
+	font-size: 2vmin;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.ctn a{
+	color: white;
+	background: deeppink;
+	padding: 8px 20px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2vmin;
+}
+.ctn a:hover{
+	color: deeppink;
+	background: white;
+	transition: 0.5s;
+}
+header{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("https://images.unsplash.com/photo-1578474846511-04ba529f0b88?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D");
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.header-content{
+	margin-bottom: 150px;
+	color: white;
+	text-align: center;
+}
+.header-content h3{
+	font-size: 3vmin;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+.line{
+	width: 200px;
+	height: 4px;
+	background: deeppink;
+	margin: 10px auto;
+	border-radius: 10px;
+
+}
+.header-content h1{
+	font-size: 7vmin;
+	text-transform: uppercase;
+}
+a{
+	text-decoration: none;
+}
+.btn{
+	background: deeppink;
+	color: white;
+	padding: 8px 20px;
+	border-radius: 10px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.btn:hover{
+	background: white;
+	color: deeppink;
+	transition: 0.5s;
+	font-weight: bold;
+
+}
+.fa-solid{
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	width: 50px;
+	cursor: pointer;
+	display: none;
+}
+/*Event*/
+section{
+	width: 80%;
+	margin: 80px auto;
+}
+.title{
+	text-align: center;
+	font-size: 3vmin;
+	color: gray;
+}
+.row{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+.row .col{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.events .row{
+	margin-top: 50px;
+}
+h4{
+	font-size: 4vmin;
+	color: gray;
+	margin: 20px auto;
+}
+p{
+	color: gray;
+	padding: 0px 40px;
+}
+.events .btn{
+	margin-top: 30px;
+}
+.facility{
+	width: 100%;
+	height: 100vh;
+	background-image: url("https://img.freepik.com/premium-photo/cafe-interior_967069-648.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	align-items: center;
+}
+.facility-content{
+	width: 60%;
+	padding: 50px;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.facility-content h1{
+	font-size: 5vmin;
+	text-transform: uppercase;
+}
+.facility-content .line{
+	margin-bottom: 40px;
+}
+.facility-content p{
+	color: white;
+	font-size: 3vmin;
+}
+.facility-content .btn{
+	margin-top: 50px;
+}
+/*menus*/
+.content-col{
+	width: 40%;
+}
+.image-col{
+	width: 60%;
+}
+
+.menus .image-gallary{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.image-gallary img{
+	max-width: 300px;
+	margin: 5px;
+}
+.content-col h1{
+	font-size: 6vmin;
+	color: gray;
+}
+.content-col .line{
+	margin-left: -1px;
+}
+.content-col p{
+	padding: 0;
+	margin: 30px auto;
+}
+.content-col .btn{
+	margin-left: -100px;
+}	
+.footer{
+	width: 100%;
+	min-height: 100px;
+	padding: 20px 80px;
+	margin: 0;
+	background: black;
+	text-align: center;
+}
+.footer p{
+	color: whitesmoke;
+	margin: 20px auto;
+}
+/*for mobile*/
+@media only screen and (max-width:800px){
+	.nav-bar{
+		padding: 0;
+	}
+	.logo{
+		position: absolute;
+		top: 30px;
+		left: 30px;
+	}
+	.nav-links{
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	background: gray;
+	margin-top: -900px;
+	}
+	.nav-links li{
+		margin: 20px auto;
+	}
+	.mobile-menu{
+		margin-top: 0px;
+	}
+/*	events*/
+	.row{
+		flex-direction: column;
+	}
+	.row .col{
+		margin: 20px auto;
+	}
+	.col img{
+		max-width: 90%;
+	}
+/*	facility*/
+	.facility-content{
+		width: 100%;
+	}
+	.facility-content .line{
+		margin-left: -10px;
+	}
+	.menu .col{
+		width: 100%;
+	}
+	.image-gallary{
+		justify-content: center;
+		align-items: center;
+	}
+	.image-gallary img{
+		width: 90%;
+	}
+	.footer{
+		padding: 10px;
+	}
+	.paris-maps{
+		width: 100%;
+		padding: 10px;
+	}
+}
+
